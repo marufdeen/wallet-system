@@ -1,4 +1,4 @@
-# Monitest API
+# Wallet API
 
 This is an example project that demonstrates the usage of Express, TypeScript, and Mongoose to build a server application with three models: `User`, `Wallet`, and `Transaction`. The server allows transfers between wallets and funding via Paystack.
 
@@ -50,16 +50,15 @@ Create a .env file in the project root and provide the necessary configuration v
 ## API Routes
 The server exposes the following routes:
 
-* POST  /api/user/register - Create a new user.
-* POST  /api/user/login - Signs user in.
-* GET  /api/user/me - Get my user personal user details.
-* GET  /api/user/bymail - Get user details by email.
-* GET  /api/user/byaccount - Get user details by accountNumber.
-* GET  /api/wallet/mywallet - Get my wallet details.
-* POST /api/wallet/transfer - Perform a wallet-to-wallet transfer in-app.
-* POST /api/wallet/fund - Fund a wallet via Paystack.
-* GET /api/wallet/verifyfunds - Verify payment initiated by Paystack and update wallet balance.
-* GET /api/ttransactions//mytransactions - Get all my transactions.
+* POST  /register - Create a new user.
+* POST  /login - Signs user in.
+* GET  /profile - Get my user personal user details.
+
+* GET  /mywallet - Get my wallet details.
+* POST /transfer - Perform a wallet-to-wallet transfer in-app.
+* POST /fund - Fund a wallet via Paystack.
+* GET /verifyfunds - Verify payment initiated by Paystack and update wallet balance.
+* GET //mytransactions - Get all my transactions.
    
 ## Models
 User
