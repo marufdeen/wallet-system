@@ -7,10 +7,10 @@ import {
 import { IUser } from "../interface/userInterface";
 
 interface IUserData {
-  firstName: string,
-  lastName: string,
-  email: string,
-  password: string,
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
 }
 class userEntity {
   private userData: IUserData;
@@ -59,7 +59,6 @@ class userEntity {
     Object.freeze(this.userData);
     return this;
   }
-
 }
 
 export default userEntity;
